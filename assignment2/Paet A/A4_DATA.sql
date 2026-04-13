@@ -1,4 +1,4 @@
---insert into "User" (user_id, username, email, password) values (1, 'qgresham0', 'eboffey0@prweb.com', 'xC8*qEsi');
+insert into "User" (user_id, username, email, password) values (1, 'qgresham0', 'eboffey0@prweb.com', 'xC8*qEsi');
 insert into "User" (user_id, username, email, password) values (2, 'lbeller1', 'msharpus1@diigo.com', 'fD9+uBodVA*');
 insert into "User" (user_id, username, email, password) values (3, 'bwildor2', 'lhonacker2@prnewswire.com', 'iC7_`2ENtD}=0>92');
 insert into "User" (user_id, username, email, password) values (4, 'sduhig3', 'gpauluzzi3@craigslist.org', 'bY8?zis~,`9`<Gaj');

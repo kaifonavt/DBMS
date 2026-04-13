@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/01_Schema.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Paet A/A3_ALTER.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Paet A/A4_DATA.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Part B/B1_WHERE.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Part B/B2_STRING.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Part B/B3_DATE.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Part B/B4_UPDATE.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <file url="file://$PROJECT_DIR$/assignment2/Part B/B5_DELETE.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
     <file url="file://$PROJECT_DIR$/assignment2/Part_C.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
+    <file url="file://$PROJECT_DIR$/assignment3/Part A/A1_Group.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
+    <file url="file://$PROJECT_DIR$/temp.sql" value="8da1af91-292b-4adc-ace6-de3515b3a391" />
   </component>
 </project>

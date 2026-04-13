@@ -1,14 +1,11 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="01_Schema.sql" type="DatabaseScript" editBeforeRun="true" singleton="false" nameIsGenerated="true">
-    <data-source id="8da1af91-292b-4adc-ace6-de3515b3a391" />
-    <script-text>INSERT INTO &quot;User&quot; (username, email, password, subscription_type, created_at)
+INSERT INTO "User" (username, email, password, subscription_type, created_at)
 VALUES
     ('PowerUser', 'power@gmail.com', 'hash1', 'premium', '2025-01-10'),
     ('Newbie', 'new@yahoo.com', 'hash2', 'free', '2026-03-01'),
     ('MusicLover', 'lover@gmail.com', 'hash3', 'premium', '2025-06-15');
 
 -- Fill remaining to reach 30+ using series
-INSERT INTO &quot;User&quot; (username, email, password, subscription_type, created_at)
+INSERT INTO "User" (username, email, password, subscription_type, created_at)
 SELECT
     'user_' || i,
     'user' || i || '@test.com',
@@ -23,8 +20,8 @@ SELECT
     'Artist ' || i,
     'Bio for artist ' || i,
     CASE
-        WHEN i &lt;= 10 THEN 'USA'
-        WHEN i &lt;= 20 THEN 'UK'
+        WHEN i <= 10 THEN 'USA'
+        WHEN i <= 20 THEN 'UK'
         ELSE 'Kazakhstan'
         END
 FROM generate_series(1, 30) s(i);
@@ -52,7 +49,7 @@ SELECT
 FROM generate_series(1, 40) s(i);
 
 -- 6. Populate Listening History (Crucial for INTERSECT and Window Functions)
--- We make User 1 a &quot;Power User&quot; with many plays
+-- We make User 1 a "Power User" with many plays
 INSERT INTO Listening_History (user_id, track_id, played_at)
 SELECT 1, (i % 5) + 1, '2026-04-01'::timestamp + (i || ' hours')::interval
 FROM generate_series(1, 10) s(i);
@@ -73,12 +70,9 @@ SELECT
     (random() * 50000)::int
 FROM generate_series(1, 40) s(i);
 
--- 8. Populate Playlists (For HAVING count &gt; 3 task)
+-- 8. Populate Playlists (For HAVING count > 3 task)
 INSERT INTO Playlist (name, user_id, is_public, created_at)
 SELECT 'Playlist ' || i, (i % 30) + 1, (i % 2 = 0), NOW() FROM generate_series(1, 10) s(i);
 
 INSERT INTO Playlist_Track (playlist_id, track_id)
-SELECT (i % 10) + 1, (i % 40) + 1 FROM generate_series(1, 50) s(i);</script-text>
-    <method v="2" />
-  </configuration>
-</component>
+SELECT (i % 10) + 1, (i % 40) + 1 FROM generate_series(1, 50) s(i);
